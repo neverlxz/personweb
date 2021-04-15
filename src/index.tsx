@@ -10,6 +10,7 @@ ReactDOM.render(
   // </React.StrictMode>,
   <BrowserRouter>
   {/* 使用了路由懒加载，所以需要使用<Suspense>包起来 */}
+  
   <Suspense fallback={<div></div>}>
     <Switch>
       <Route path="/" render={routerProps => {
@@ -20,6 +21,7 @@ ReactDOM.render(
 </BrowserRouter>,
   document.getElementById('root')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

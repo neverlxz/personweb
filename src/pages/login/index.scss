@@ -1,0 +1,17 @@
+.login-container{
+    width: 100vW;
+    min-height: 100vh;
+    background: #ccc;
+}
+.login-box{
+    position: fixed;
+    width: 400px;
+    // height: 300px;
+    background: rgba($color: #fff, $alpha: .2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 25px;
+    border-radius: 10px;
+    // opacity: .5;
+}

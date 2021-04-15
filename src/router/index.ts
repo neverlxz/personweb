@@ -1,5 +1,6 @@
 import {
-    Home
+    Home,
+    Login
 } from '../pages'
 
 export type RouterType = {
@@ -14,8 +15,16 @@ const HomeRouter: RouterType = {
     component: Home,
     root: []
 }
+
+const LoginRouter: RouterType = {
+    path: '/login',
+    component: Login,
+    root: []
+}
+
 const Routers: RouterType[] = ([
-    HomeRouter
+    HomeRouter,
+    LoginRouter
 ])
 
 export {Routers}
