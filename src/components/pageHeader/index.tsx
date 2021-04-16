@@ -2,6 +2,7 @@ import React,{ useState } from 'react';
 import './index.scss'
 import {Link} from 'react-router-dom'
 import { Input } from 'antd'
+import Logo from '../Logo/index'
 interface HeaderProps{
     name: String
 }
@@ -18,7 +19,9 @@ function HomeHeader(props:HeaderProps) {
 
     return (
         <div className="header-container">
-            <div className="info">{ name }</div>
+            <div className="info">
+              <Logo/>
+            </div>
             <Search style={{ width: 500,lineHeight: '40px' }} placeholder="input search text" onSearch={onSearch} enterButton />
             <Link className="link-word" to="/login">登录</Link>
         </div>

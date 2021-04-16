@@ -1,20 +1,46 @@
 import {
     Home,
-    Login
+    Login,
+    Study,
+    Experience,
+    Project
 } from '../pages'
 
 export type RouterType = {
     path: string,
     component: React.LazyExoticComponent<any>,
     root: string[],
-    notExect?: boolean
+    notExect?: boolean,
+    children?: RouterType[],
+    redirect?: string
 }
-
-const HomeRouter: RouterType = {
-    path: '/home',
-    component: Home,
+const StudyRouter: RouterType = {
+    path: '/home/study',
+    component: Study,
     root: []
 }
+const ProjectRouter: RouterType = {
+    path: '/home/project',
+    component: Project,
+    root: []
+}
+const ExperienceRouter: RouterType = {
+    path: '/home/experience',
+    component: Experience,
+    root: []
+}
+const HomeRouter: RouterType = {
+    path: '/home',
+    // redirect: '/home/study',
+    component: Home,
+    root: [],
+    children:[
+        StudyRouter,
+        ProjectRouter,
+        ExperienceRouter
+    ]
+}
+
 
 const LoginRouter: RouterType = {
     path: '/login',

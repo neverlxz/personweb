@@ -1,0 +1,32 @@
+.logo{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #1890ff;
+    color: #1890ff;
+    border-radius: 10px 30px 10px 30px / 10px 30px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-inner{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    border-radius: 10px 30px 10px 30px / 10px 30px 10px 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    position: relative;
+    font-size: 26px;
+    left: -3px;
+}
