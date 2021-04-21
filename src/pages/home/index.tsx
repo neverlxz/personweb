@@ -15,12 +15,14 @@ export default function Home(){
             <HomeMenu />
 
             {/* 路由 */}
-            <Switch>
-                <Route exact path="/home/study" component={Study} />
-                <Route exact path="/home/experience" component={Experience} />
-                <Route exact path="/home/project" component={Project} />
-                <Redirect path="/home" to="/home/study" />
-            </Switch>
+            <div className="content-box">
+                <Switch>
+                    <Route exact path="/home/study" component={Study} />
+                    <Route exact path="/home/experience" component={Experience} />
+                    <Route exact path="/home/project" component={Project} />
+                    <Redirect path="/home" to="/home/study" />
+                </Switch>
+            </div>
         </div>
     )
 }

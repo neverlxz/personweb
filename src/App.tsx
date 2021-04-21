@@ -2,7 +2,7 @@ import React from 'react'
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom'
 import { Home, About } from './pages'
 import { Routers } from './router'
-import './App.css'
+import './App.scss'
 function App () {
    type RouterType = {
     path: string,
