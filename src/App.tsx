@@ -1,6 +1,5 @@
 import React from 'react'
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom'
-import { Home, About } from './pages'
 import { Routers } from './router'
 import './App.scss'
 function App () {
@@ -22,7 +21,7 @@ function App () {
             key={index}
             path={path}
             children={props => {
-              let redirectPath = null;
+              let redirectPath = '';
               return <RouteComponent {...props}>
                 <Switch>
                   {children.map((child, index2) => {
